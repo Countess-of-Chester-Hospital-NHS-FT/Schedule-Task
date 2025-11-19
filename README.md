@@ -5,7 +5,7 @@ This repo shows example code for scheduling a task to run a python script automa
 
 Note: No data are shared in this repository
 
-### Instructions
+### Instructions (Laptop)
 
 * Copy the contents of this repo to your Desktop.
 * There are 2 sets of example files here (create_task_R.ps1, my_R_script.R and script_log_R.txt are the files you need for R, the other 3 are for python).
@@ -16,6 +16,10 @@ Note: No data are shared in this repository
 * my_script.py is a python script that just adds an entry to a log file (script_log.txt)
 * Once you've created the task, you can check whether it ran ok using the log file.
 * Delete a task by running `Unregister-ScheduledTask -TaskName "Run Test Python Script" -Confirm:$false`
+
+### Instructions (Server)
+* Run Powershell as administrator
+* Run create_task_server.ps1 - runs the script whether the user is logged on or not.
 
 ### Output
 The output of the .ps1 files is a scheduled task. The only output of the scripts is adding a timestamp to a log file.
